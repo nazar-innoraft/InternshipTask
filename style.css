@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    /* background: rgb(33, 33, 139); */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 1000px;
+    margin: auto;
+}
+nav img{
+    width: 150px;
+    height: auto;
+}
+ul img{
+    width: 43px;
+}
+li{
+    display: inline-block;
+}
+li a{
+
+}
