@@ -1,28 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Bungee+Shade&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 .hero{
-    /* background: rgb(33, 33, 139); */
+    background: rgb(33, 33, 139);
 }
 nav{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    width: 1000px;
+    align-items: center;
+    width: 1200px;
     margin: auto;
 }
 nav img{
     width: 150px;
     height: auto;
+    /* background-color: rgba(250, 245, 245, 0.8); */
+    /* filter: invert(100%); */
 }
+nav > img {
+    height: 30px;
+    
+}
+ul{
+    list-style-type: none;
+    /* height: 37px; */
+}
+
 ul img{
-    width: 43px;
+    width: 37px;
+    height: 37px;
+    padding: 5px;
+    margin: auto;
+}
+li{
+    text-decoration: none;
+}
+li a{
+    display: inline-block;
 }
 li{
     display: inline-block;
 }
-li a{
-
+.body{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    padding: 30px;
+    gap: 30px;
+    position: relative;
+    height: 700px;
+}
+.body *{
+    color: white;
+    position: relative;
+}
+.left{
+    min-width: 60%;
+}
+.left img{
+    width: 100%;
+}
+.left h4{
+    font-size: 45px;
+    font-family: 'Bungee Shade', sans-serif;
+    line-height: 1;
+}
+.strip{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    right: 55%;
+    background: rgb(189, 230, 128);
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: space-between;
+    gap: 100px;
+}
+.right div{
+    /* background: rgb(216, 168, 168); */
+    max-width: 100%;
+}
+.right h3{
+    font-size: 30px;
+    opacity: 0.8;
+    letter-spacing: 2px;
+    font-family: 'Aclonica', sans-serif;
+}
+.right p{
+    width: 100%;
+    padding: 10px 0px 0px 25px;
+    font-size: 120%;
+}
+.right a{
+    display: inline-block;
+    font-size: 120%;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+footer{
+    background: gray;
+}
+.foot{
+    width: 1200px;
+    margin: auto;
+    height: 200px;
+    text-align: center;
+    color: white;
 }
