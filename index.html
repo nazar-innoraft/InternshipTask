@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 1</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="hero">
         <nav>
-            <img src="img/innoraft-logo.png" alt="innoraft-logo">
+            <h3>logo</h3>
             <ul>
-                <li><a href="#"><img src="img/menu-icon-1.png" alt="menu-icon-1"></a></li>
-                <li><a href="#"><img src="img/twitter.jpeg" alt="twitter"></a></li>
-                <li><a href="#"><img src="img/fblogo.png" alt="fblogo"></a></li>
-                <li><a href="#"><img src="img/insta-logo3.webp" alt="instagram-logo"></a></li>
+                <li><a href="#"><i class="fa fa-bars"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
             </ul>
         </nav>
         <div class="body">
@@ -40,8 +42,19 @@
     <footer>
         <div class="foot">
             <h3>I am Nazar</h3>
-            <p>Follow me on Leetcode</p>            
+            <p>Follow me on Leetcode</p>
         </div>
     </footer>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
+
 </html>
