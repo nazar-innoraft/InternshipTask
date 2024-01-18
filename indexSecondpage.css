@@ -67,13 +67,27 @@ nav {
 
 .container2 {
   width: 1200px;
-  margin: auto;
-  position: relative;
+  margin: 50px auto;
   text-align: center;
 }
 .container2 .background {
   position: absolute;
   background: yellow;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 1430px;
+  height: 100px;
+  z-index: -1;
+}
+.container2 h2 {
+  color: white;
+  font-size: 200%;
+}
+.container2 h3 {
+  color: white;
+  font-size: 330%;
+  margin: 30px 0;
 }
 .container2 .main {
   display: flex;
@@ -82,7 +96,7 @@ nav {
   gap: 40px;
 }
 .container2 .main div {
-  width: 27%;
+  width: 20%;
   background: white;
   text-align: center;
   padding: 15px;
@@ -90,18 +104,33 @@ nav {
   font-family: "Fjalla One", sans-serif;
 }
 .container2 .main div img {
-  width: 260px;
+  width: 80%;
 }
 .container2 .main div h3 {
   font-size: 150%;
   padding: 10px;
+  color: blue;
 }
 .container2 .main div p {
   padding: 5px;
+}
+.container2 a {
+  padding: 15px 30px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 120%;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: rgb(44, 160, 52);
+  margin-top: 30px;
+  border-radius: 30px;
 }
 
 footer {
   width: 1200px;
   height: 40px;
   text-align: center;
+  margin: auto;
 }/*# sourceMappingURL=indexSecondpage.css.map */
