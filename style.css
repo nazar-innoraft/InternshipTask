@@ -1,11 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Bungee+Shade+Fjalla+Oswald+Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Bungee+Shade+Fjalla+Oswald+Salsa+Open+Sans+Poppins:wght@100&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+#mySidenav {
+    width: 0;
+    height: 100%;
+    background-color: #555;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    z-index: 1;
+}
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 50px;
+    margin-left: 50px;
+}
+
 .hero {
-    background: rgb(33, 33, 139);
+    background: rgb(180, 202, 231);
 }
 
 nav {
@@ -13,42 +35,59 @@ nav {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
     padding: 10px 0;
 }
-nav h3{
+.sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover{
+    background: wheat;
+    color: black;
+}
+
+nav h3 {
     font-size: 40px;
     /* width: 20%; */
     opacity: 0.8;
     letter-spacing: 2px;
     font-family: 'Aclonica', sans-serif;
-    color: white;
-    text-shadow: 2px 2px 4px yellow;
+    /* color: white; */
+    text-shadow: 2px 2px 8px white;
 }
-nav ul{
+
+nav ul {
     /* width: 20%; */
     list-style-type: none;
 }
-nav ul li{
+
+nav ul li {
     float: left;
     /* display: inline-block; */
     width: 25%;
     text-align: center;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     display: inline-block;
     text-align: center;
-    color: white;
+    color: black;
     font-size: 30px;
     width: 100%;
     padding: 10px 20px;
     transition: all 0.3s ease;
 }
-nav ul li a:hover{
-    background: rgb(115, 241, 115);
-    color: rgb(146, 58, 14);
+
+nav ul li a:hover {
+    background: rgb(18, 32, 18);
+    color: rgb(209, 216, 235);
     transform: scale(1.3);
     border-radius: 5%;
 }
@@ -68,27 +107,27 @@ nav ul li a:hover{
 }
 
 .body * {
-    color: white;
+    /* color: white; */
     position: relative;
     margin: auto;
 }
 
-.left {
+.body .left {
     min-width: 60%;
 }
 
-.left img {
+.body .left img {
     width: 100%;
 }
 
-.left h4 {
+.body .left h4 {
     font-size: 45px;
     font-family: 'Bungee Shade', sans-serif;
     line-height: 1;
     padding: 15px 0;
 }
 
-.strip {
+.body .strip {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -97,7 +136,7 @@ nav ul li a:hover{
     background: rgb(189, 230, 128);
 }
 
-.right {
+.body .right {
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -105,25 +144,25 @@ nav ul li a:hover{
     gap: 100px;
 }
 
-.right div {
+.body .right div {
     /* background: rgb(216, 168, 168); */
     max-width: 100%;
 }
 
-.right h3 {
+.body .right h3 {
     font-size: 30px;
     opacity: 0.8;
     letter-spacing: 2px;
     font-family: 'Aclonica', sans-serif;
 }
 
-.right p {
+.body .right p {
     width: 100%;
     padding: 10px 0px 0px 25px;
     font-size: 120%;
 }
 
-.right a {
+.body .right a {
     display: inline-block;
     font-size: 120%;
     padding: 10px;

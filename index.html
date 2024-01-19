@@ -9,11 +9,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Page 1</a>
+        <a href="indexSecondpage.html">Page 2</a>
+        
+      </div>
     <div class="hero">
         <nav>
             <h3>logo</h3>
             <ul>
-                <li><a href="#"><i class="fa fa-bars"></i></a></li>
+                <li><a href="#" onclick="openNav()"><i class="fa fa-bars"></i></a></li>
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -47,12 +53,14 @@
     </footer>
     <script>
         function openNav() {
+            console.log(document.getElementById("mySidenav").style.width);
             document.getElementById("mySidenav").style.width = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
         }
-
-        /* Set the width of the side navigation to 0 */
         function closeNav() {
+            console.log(document.getElementById("mySidenav").style.width);
             document.getElementById("mySidenav").style.width = "0";
+            document.body.style.backgroundColor = "rgba(0,0,0,1)";
         }
     </script>
 </body>
