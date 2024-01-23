@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+.maincontainer{
+    margin: auto; 
+}
 #mySidenav {
     width: 0;
     height: 100%;
