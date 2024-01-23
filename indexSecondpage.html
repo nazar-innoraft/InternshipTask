@@ -11,11 +11,16 @@
 </head>
 
 <body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Page 1</a>
+        <a href="indexSecondpage.html">Page 2</a>        
+      </div>
     <div class="maincontainer">
         <nav>
             <h3>logo</h3>
             <ul>
-                <li><a href="#"><i class="fa fa-bars"></i></a></li>
+                <li><a href="#" onclick="openNav()"><i class="fa fa-bars"></i></a></li>
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -125,6 +130,8 @@
             <p>Follow me on Leetcode</p>
         </footer>
     </div>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
