@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    transition: all 0.3s ease;
+}
 .maincontainer{
     margin: auto; 
 }
@@ -18,7 +21,7 @@
     left: 0;
     overflow-x: hidden;
     padding-top: 60px;
-    transition: 0.5s;
+    transition: 0.3s;
     z-index: 1;
 }
 .closebtn {
